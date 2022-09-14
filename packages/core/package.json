@@ -1,3 +1,12 @@
 {
-  "name": "@kapok/core"
+  "name": "@kapok/core",
+  "dependencies": {
+    "@tiptap/core": "^2.0.0-beta.195"
+  },
+
+  "devDependencies": {
+    "minimist": "^1.2.5"
+  },
+
+  "version": "0.0.1"
 }
