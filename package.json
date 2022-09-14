@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "build:packages": "npm run clean:packages && lerna changed | while read package; do rollup -c --scope $package || exit 1; done",
+    "build:allpackages": "npm run clean:packages && for dir in packages/*; do package=${dir#'packages/'}; rollup -c --scope @tiptap/$package || exit 1; done"
+  }
+}

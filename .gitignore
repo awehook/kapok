@@ -1,0 +1,16 @@
+*.log
+.cache
+.DS_Store
+.temp
+node_modules
+dist
+.env
+.env.*
+.npmrc
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.idea
